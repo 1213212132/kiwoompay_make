@@ -315,7 +315,7 @@ body {
     top: 27%;
     left: 0.1%;
 
-
+    color: #3b3b3d;
 }
 
 
@@ -326,7 +326,8 @@ body {
     font-weight: 400;
     top: 33%;
     left: 0.1%;
-
+    color: #6e6e6e;
+    line-height: 1.3;
 }
 
 .aos_content1 a.btn.wc {
@@ -431,7 +432,7 @@ a.btn.wc:hover:before {
     width: 100%;
     left: 86%;
     top: 45%;
-
+    color: #3b3b3d;
 
 }
 
@@ -441,11 +442,12 @@ a.btn.wc:hover:before {
     position: absolute;
     font-size: 18px;
     font-weight: 400;
-    width: 20%;
-    left: 84%;
+    width: 30%;
+    left: 74%;
     top: 52%;
-
-
+    color: #6e6e6e;
+    line-height: 1.3;
+    direction: rtl
 }
 
 
@@ -525,7 +527,7 @@ a.btn.wc:hover:before {
     top: 30%;
     left: 5.16%;
 
-
+    color: #3b3b3d;
 }
 
 
@@ -536,8 +538,8 @@ a.btn.wc:hover:before {
     font-weight: 400;
     top: 36%;
     left: 5.16%;
-
-
+    line-height: 1.3;
+    color: #6e6e6e;
 }
 
 .aos_content3 a.btn.wc {
