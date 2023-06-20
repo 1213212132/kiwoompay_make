@@ -1,0 +1,709 @@
+@charset "utf-8";
+
+/* fixedGnb */
+.fixedGnb {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  width: 15px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 50;
+}
+
+.fixedGnb ul li {
+  margin-bottom: 40px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/fixedGnb_off.png") no-repeat center center;
+  font-size: 0;
+}
+
+.fixedGnb ul li.active {
+  background: url("../img/fixedGnb_on.png") no-repeat center center;
+}
+
+.fixedGnb ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.fixedGnb ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.fixedGnb p {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 1px;
+  height: calc(100% - 20px);
+  margin-left: -0.5px;
+  background: #a0a0a0;
+}
+
+
+/* main */
+.section {
+  padding-top: 62px;
+}
+
+/* .main00 {height:750px; height:900px; background:#07182a url("../img/main_visual_1920.gif") no-repeat center center; background-size:cover; color:#fff;} */
+.main00 {
+  /* height:750px; */
+  height: 900px;
+  /* background-size:cover; */
+  color: #fff;
+}
+
+.main00>div {
+  padding: 200px 110px;
+}
+
+.main00 p {
+  font-size: 25px;
+}
+
+.main00 h2 {
+  margin: 20px 0 40px;
+  font-size: 45px;
+  font-family: 'DakiB';
+}
+
+.main00 a {
+  display: none;
+}
+
+.main00 a span {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+@media all and (max-width:1200px) {
+  .main00>div {
+    padding: 120px 110px;
+  }
+}
+
+@media all and (max-width:770px) {
+  .main00 {
+    height: auto !important;
+  }
+}
+
+
+.main01 .tit {
+  margin: 138px 0 90px;
+  text-align: center;
+}
+
+.main01 .tit h2 {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-size: 35px;
+  color: #3b3b3d;
+  font-family: 'DakiB';
+}
+
+.main01 .tit h2 i {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 88px;
+  height: 2px;
+  margin-left: -44px;
+  background: #093968;
+}
+
+.main01 .tit p {
+  font-size: 16px;
+  color: #6e6e6e;
+}
+
+.main01 .innerBox {
+  height: 272px;
+  padding-top: 30px;
+  background: #f3f4f9;
+}
+
+.main01 .innerBox ul {
+  padding-top: 5px;
+  overflow: hidden;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main01 .innerBox ul li {
+  float: left;
+  width: 33.333%;
+}
+
+.main01 .innerBox ul li span {
+  display: block;
+  font-size: 30px;
+  color: #3b3b3d;
+  font-family: 'DakiB';
+}
+
+.main01 .innerBox ul li a {
+  display: block;
+  width: 70.411%;
+  margin: 30px auto;
+  padding: 18px 0;
+  font-size: 16px;
+  color: #fff;
+  background: #3b3b3d;
+  -webkit-transition: background 500ms;
+  transition: background 500ms;
+}
+
+.main01 .innerBox ul li a:hover {
+  background: #e4007f;
+}
+
+.main01 .innerBox ul li .white {
+  padding-top: 30px;
+  background: #fff;
+}
+
+.main01 .innerBox ul li .white i {
+  display: block;
+  width: 70.411%;
+  height: 15px;
+  margin: 0 auto;
+  border: 2px solid #093968;
+  border-bottom: 0;
+}
+
+.main01 .innerBox ul li .white h4 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #3b3b3d;
+}
+
+.main01 .innerBox ul li .white p {
+  font-size: 14px;
+  color: #6e6e6e;
+  line-height: 1.5;
+}
+
+.main02 .tit {
+  margin: 138px 0 90px;
+  text-align: center;
+}
+
+.main02 .tit h2 {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-size: 35px;
+  color: #3b3b3d;
+  font-family: 'DakiB';
+}
+
+.main02 .tit h2 i {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 88px;
+  height: 2px;
+  margin-left: -44px;
+  background: #093968;
+}
+
+.main02 .tit p {
+  font-size: 16px;
+  color: #6e6e6e;
+}
+
+.main02 .innerBox {
+  position: relative;
+  height: 800px;
+}
+
+.main02 .innerBox .game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.main02 .innerBox .game span {
+  right: 0;
+}
+
+.main02 .innerBox .contents {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.main02 .innerBox .contents span {
+  left: 0;
+}
+
+.main02 .innerBox .colorChange {}
+
+.main02 .innerBox .colorChange span {
+  position: absolute;
+  top: 50px;
+  display: block;
+  width: 90px;
+  padding: 12px 0;
+  font-size: 16px;
+  color: #fff;
+  background: #093968;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-transition: background 500ms;
+  transition: background 500ms;
+}
+
+.main02 .innerBox .colorChange span:hover {
+  color: #3b3b3d;
+  background: #ffffff;
+}
+
+.main02 .innerBox .on {
+  background: #093968;
+  -webkit-transition: background 1000ms;
+  transition: background 1000ms;
+}
+
+.main02 .innerBox .on span {
+  color: #3b3b3d;
+  background: #ffffff;
+}
+
+.main02 .innerBox .on span:hover {
+  color: #ffffff;
+  background: #093968;
+}
+
+.main02 .innerBox .visualBg {
+  display: none;
+  position: relative;
+  padding-top: 150px;
+  z-index: 1;
+}
+
+.main02 .innerBox .visualBg>div {
+  width: 100%;
+  height: 500px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.main02 .innerBox .visualBg h3 {
+  font-size: 35px;
+  color: #fff;
+  line-height: 1.5;
+  font-family: 'DakiL';
+}
+
+.main02 .innerBox .visualBg img {
+  display: block;
+  margin: 20px 0 180px;
+}
+
+.main02 .innerBox .visualBg p {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  color: #ededed;
+  line-height: 1.5;
+  background: #093968;
+}
+
+.main02 .innerBox .visualBg .gv {
+  text-align: left;
+  background: url("../img/main_game_pc.jpg") no-repeat top center;
+}
+
+.main02 .innerBox .visualBg .cv {
+  text-align: right;
+  background: url("../img/main_game_contents.jpg") no-repeat top center;
+}
+
+.main03 {
+  padding-bottom: 250px;
+}
+
+.main03>div {
+  position: relative;
+  padding-top: 200px;
+}
+
+.main03>div:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.main03 .tit {
+  display: none;
+  margin: 138px 0 90px;
+  text-align: center;
+}
+
+.main03 .tit h2 {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-size: 35px;
+  color: #3b3b3d;
+  font-family: 'DakiB';
+}
+
+.main03 .tit h2 i {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 88px;
+  height: 2px;
+  margin-left: -44px;
+  background: #093968;
+}
+
+.main03 .tit p {
+  font-size: 16px;
+  color: #6e6e6e;
+}
+
+.main03 .square01 {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  width: 10px;
+  height: 150px;
+  background: #093968;
+}
+
+.main03 .square02 {
+  position: absolute;
+  bottom: -120px;
+  left: 120px;
+  width: 10px;
+  height: 150px;
+  background: #093968;
+}
+
+.main03 .innerBox {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+}
+
+.main03 .innerBox .img {
+  position: relative;
+  float: left;
+  width: 65%;
+  text-align: center;
+}
+
+.main03 .innerBox .img>img {
+  max-width: 689px;
+  width: 100%;
+}
+
+.main03 .innerBox .img .mock_slider {
+  position: absolute;
+  top: 4.5%;
+  left: 9.103%;
+  width: 81.795%;
+  height: 63.27%;
+  overflow: hidden;
+}
+
+.main03 .innerBox .img .mock_slider img {
+  width: 100%;
+}
+
+.main03 .innerBox .txt {
+  float: right;
+  width: 35%;
+  padding-left: 3.334%;
+  box-sizing: border-box;
+}
+
+.main03 .innerBox .txt h2 {
+  font-size: 35px;
+  color: #3b3b3d;
+  font-family: 'DakiL';
+}
+
+.main03 .innerBox .txt p {
+  margin: 30px 0;
+  font-size: 14px;
+  color: #6e6e6e;
+}
+
+.main03 .innerBox .txt ul li {
+  margin-bottom: 20px;
+}
+
+.main03 .innerBox .txt ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.main03 .innerBox .txt ul li dl {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  width: calc(100% - 80px);
+}
+
+.main03 .innerBox .txt ul li dl dt {
+  font-size: 16px;
+  color: #3b3b3d;
+  margin-bottom: 10px;
+}
+
+.main03 .innerBox .txt ul li dl dt img {
+  margin-left: 5px;
+}
+
+.main03 .innerBox .txt ul li dl dd {
+  font-size: 14px;
+  color: #6e6e6e;
+}
+
+.main03 .innerBox .txt ul li a {
+  display: block;
+  font-size: 0;
+}
+
+.main03 .innerBox .txt ul li a .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+}
+
+.main03 .innerBox .txt ul li:nth-of-type(1) a .icon {
+  background: url("../img/main03_icon01.png") no-repeat center;
+}
+
+.main03 .innerBox .txt ul li:nth-of-type(1) a.active .icon {
+  background: url("../img/main03_icon01_on.png") no-repeat center;
+}
+
+.main03 .innerBox .txt ul li:nth-of-type(2) a .icon {
+  background: url("../img/main03_icon02.png") no-repeat center;
+}
+
+.main03 .innerBox .txt ul li:nth-of-type(2) a.active .icon {
+  background: url("../img/main03_icon02_on.png") no-repeat center;
+}
+
+.main03 .innerBox .txt ul li:nth-of-type(3) a .icon {
+  background: url("../img/main03_icon03.png") no-repeat center;
+}
+
+.main03 .innerBox .txt ul li:nth-of-type(3) a.active .icon {
+  background: url("../img/main03_icon03_on.png") no-repeat center;
+}
+
+.main03 .innerBox .txt ul li:nth-of-type(4) a .icon {
+  background: url("../img/main03_icon04.png") no-repeat center;
+}
+
+.main03 .innerBox .txt ul li:nth-of-type(4) a.active .icon {
+  background: url("../img/main03_icon04_on.png") no-repeat center;
+}
+
+gwmain {
+  display: block;
+}
+
+/* 메인화면 */
+#main-visual {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#main-visual p.bg img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+}
+
+#main-visual div.slogan {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -65%);
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+#main-visual div.slogan h2 {
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: -120px;
+}
+
+#main-visual div.slogan h2 img {
+  width: 420px;
+}
+
+#main-visual div.slogan p {
+  line-height: 1.8em;
+}
+
+i.fas,
+i.far,
+i.fab {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.DAOU {
+  height: 60px;
+  font-family: NotoSansCJKkr;
+  font-size: 34px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  color: #f5f6ff;
+}
+
+.Rectangle {
+  width: 30px;
+  height: 3px;
+  background-color: #f5f6ff;
+  margin: 5px auto;
+}
+
+
+
+
+/* 개발연동프로세스 */
+.gwprocess {
+  width: 1017px;
+  height: 80px;
+  font-family: NotoSansCJKkr;
+  font-size: 26px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+
+
+/* 서비스 정책 */
+.gwserviceHover {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.gwserviceHover ul {
+  height: 250px;
+  overflow: hidden;
+}
+
+.gwserviceHover ul li {
+  float: left;
+  width: 20%;
+  height: 100%;
+  display: table;
+  text-align: center;
+  -webkit-transition: background 500ms;
+  transition: background 500ms;
+}
+
+.gwserviceHover ul li:hover {
+  background: rgba(236, 223, 223, 0.87);
+}
+
+.gwserviceHover ul li .con {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.gwserviceHover ul li .con .inner {
+  background: url("../img/developer/right_purple.png") no-repeat right;
+}
+
+.gwserviceHover ul li .con .inner h4 {
+  margin: 20px 0;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'DakiB';
+}
+
+.gwserviceHover ul li .con .inner p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5;
+}
+
+.gwserviceHover ul li .con .lastinner {}
+
+.gwserviceHover ul li .con .lastinner h4 {
+  margin: 20px 0;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: 'DakiB';
+}
+
+.gwserviceHover ul li .con .lastinner p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5;
+}
+
+.gwserviceHover ul li:last-of-type .con .inner {
+  border-right: 0;
+}
+
+
+/* 개발시작하기 */
+.gwdevStart {
+  width: 100%;
+  height: 60px;
+  font-family: NotoSansCJKkr;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: center;
+  background: #395aff;
+  color: #ffffff;
+  margin: 20px auto;
+  border-radius: 0 0 10px 10px;
+}
+
+/* 개발시작하기 화살표 */
+.gwdevStartShape {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  background: url("../img/developer/right_white.png") no-repeat center;
+}
