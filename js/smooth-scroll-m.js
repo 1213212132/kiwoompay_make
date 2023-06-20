@@ -46,7 +46,7 @@ $(function () {
         var scrollDistance = $window.height() / distance_offset;
         var delta = 0;
         if (smoothScroll_passive()) {
-            delta = event.wheelDelta / 120 || -event.originalEvent.detail / 3;
+            delta = event.wheelDelta / 100 || -event.originalEvent.detail / 3;
         } else {
             if (typeof event.originalEvent.deltaY != "undefined") {
                 delta = -event.originalEvent.deltaY / 120;
