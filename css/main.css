@@ -19,8 +19,7 @@ body {
 
 
 .header.on {
-    background: #b0c0da;
-
+    background: #0e3055
 }
 
 .header a {
@@ -67,14 +66,14 @@ body {
     left: -30px;
     width: 1px;
     height: 12px;
-    background: #ddd;
+    background: #e4007f;
     transform: translate(0, -50%);
 }
 
 .header .top li {
     font-family: 'GmarketSansMedium';
     display: flex;
-    font-size: 16px;
+    font-size: 14px;
     gap: 30px;
     color: #ffffff;
 }
@@ -84,10 +83,10 @@ body {
     content: "";
     position: absolute;
     top: 50%;
-    right: 455px;
+    right: 450px;
     width: 1px;
-    height: 12px;
-    background: #ddd;
+    height: 13px;
+    background: #e4007f;
     transform: translate(0, -50%);
 }
 
@@ -98,7 +97,7 @@ body {
 } */
 
 
-
+/* 헤더 끝*/
 
 
 .main_visual {
@@ -180,21 +179,25 @@ body {
 }
 
 
+
+
+
 .main_visual a.btn.wc {
 
     position: absolute;
     display: inline-block;
-    width: 145px;
+    width: 120px;
 
     box-sizing: border-box;
     border: 3px solid #fff;
     text-align: center;
     line-height: 37px;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
-    top: 45%;
+    top: 39%;
+    left: 18.4%;
     letter-spacing: 2px;
-    z-index: 999;
+    z-index: 888;
 
 
 }
@@ -218,12 +221,17 @@ body {
 }
 
 
+.main_visual .right:hover span {
 
+    color: #e4007f;
+
+
+}
 
 .main_visual .right_arrow {
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 35%;
+    left: 49.4%;
     transform: translate(-50%, -50%);
     max-width: 1300px;
     width: 100%;
@@ -254,8 +262,8 @@ body {
     content: "";
     position: absolute;
     top: 60%;
-    left: 0;
-    right: 0;
+    left: 1%;
+    right: 1%;
     height: 2px;
     background: #fff;
 }
@@ -281,17 +289,17 @@ body {
     color: #093968;
     font-family: 'GmarketSansMedium';
 
-    padding-bottom: 600px;
+    padding-bottom: 700px;
     /*밀어버린거 기억*/
 
 }
 
 .aos_content1 span {
     position: absolute;
-    font-size: 140px;
+    font-size: 120px;
     width: 80%;
-    right: 20.3%;
-    top: 1%;
+    right: 19.3%;
+    top: 5%;
     font-weight: 900;
     letter-spacing: -3px;
 
@@ -303,8 +311,8 @@ body {
 .aos_content1 .white {
 
     position: absolute;
-    left: 42.5%;
-    top: 1%;
+    left: 36.9%;
+    top: 5%;
     color: #ffffff;
 
     height: 100%;
@@ -327,7 +335,7 @@ body {
     font-size: 24px;
     font-weight: 600;
     top: 27%;
-    left: 0.1%;
+    left: 1%;
 
     color: #3b3b3d;
 }
@@ -337,9 +345,9 @@ body {
 
     position: absolute;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     top: 33%;
-    left: 0.1%;
+    left: 1%;
     color: #6e6e6e;
     line-height: 1.3;
 }
@@ -347,16 +355,16 @@ body {
 .aos_content1 a.btn.wc {
     position: absolute;
     display: inline-block;
-    width: 145px;
+    width: 120px;
 
     box-sizing: border-box;
     border: 3px solid #093968;
     text-align: center;
     line-height: 37px;
-    font-size: 16px;
+    font-size: 14px;
     color: #093968;
-    top: 47%;
-    left: 0.1%;
+    top: 41%;
+    left: 1%;
     letter-spacing: 2px;
 
 
@@ -396,17 +404,17 @@ a.btn.wc:hover:before {
     position: relative;
     display: block;
     color: #093968;
-    padding-bottom: 600px;
+    padding-bottom: 700px;
     /*밀어버린거 기억*/
 
 }
 
 .aos_content2 span {
     position: absolute;
-    font-size: 140px;
+    font-size: 120px;
     width: 80%;
-    left: 45.3%;
-    top: 19%;
+    left: 38.3%;
+    top: 11%;
     font-weight: 900;
     letter-spacing: -3px;
 
@@ -418,8 +426,8 @@ a.btn.wc:hover:before {
 .aos_content2 .white {
 
     position: absolute;
-    left: 45.3%;
-    top: 19%;
+    left: 38.3%;
+    top: 11%;
     color: #ffffff;
     width: 222.383px;
     height: 100%;
@@ -442,8 +450,8 @@ a.btn.wc:hover:before {
     font-size: 24px;
     font-weight: 600;
     width: 100%;
-    left: 86%;
-    top: 45%;
+    left: 79%;
+    top: 35%;
     color: #3b3b3d;
 
 }
@@ -453,10 +461,10 @@ a.btn.wc:hover:before {
 
     position: absolute;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     width: 30%;
-    left: 74%;
-    top: 52%;
+    left: 68%;
+    top: 42%;
     color: #6e6e6e;
     line-height: 1.3;
     direction: rtl
@@ -466,16 +474,16 @@ a.btn.wc:hover:before {
 .aos_content2 a.btn.wc {
     position: absolute;
     display: inline-block;
-    width: 145px;
+    width: 120px;
 
     box-sizing: border-box;
     border: 3px solid #093968;
     text-align: center;
     line-height: 37px;
-    font-size: 16px;
+    font-size: 14px;
 
-    top: 65%;
-    left: 91%;
+    top: 54.5%;
+    left: 88%;
     letter-spacing: 2px;
 
 
@@ -499,10 +507,10 @@ a.btn.wc:hover:before {
 
 .aos_content3 span {
     position: absolute;
-    font-size: 140px;
+    font-size: 120px;
     width: 80%;
-    right: 17.3%;
-    top: 1%;
+    right: 18%;
+    top: 0%;
     font-weight: 900;
     letter-spacing: -3px;
 
@@ -511,18 +519,18 @@ a.btn.wc:hover:before {
     line-height: 1em;
 }
 
-.aos_content3 .white {
+/* .aos_content3 .white {
 
     position: absolute;
     left: 31.16%;
-    top: 19%;
+    top: 15%;
     color: #ffffff;
 
     height: 100%;
     white-space: nowrap;
     overflow: hidden;
 
-}
+} */
 
 .aos_content3 img {
     float: right;
@@ -548,7 +556,7 @@ a.btn.wc:hover:before {
 
     position: absolute;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     top: 36%;
     left: 5.16%;
     line-height: 1.3;
@@ -558,13 +566,13 @@ a.btn.wc:hover:before {
 .aos_content3 a.btn.wc {
     position: absolute;
     display: inline-block;
-    width: 145px;
+    width: 120px;
 
     box-sizing: border-box;
     border: 3px solid #093968;
     text-align: center;
     line-height: 37px;
-    font-size: 16px;
+    font-size: 14px;
     color: #093968;
     top: 47%;
     left: 5.16%;
@@ -582,11 +590,12 @@ a.btn.wc:hover:before {
 
 /*  */
 
-/*여기서 부터 메인콘*/
+/*여기서 부터 메인콘텐츠*/
 
 .main_content {
 
     font-family: 'GmarketSansMedium';
+    padding-bottom: 120px;
 }
 
 .main_content .tit h2 {
@@ -596,6 +605,7 @@ a.btn.wc:hover:before {
     margin-bottom: 30px;
     padding-bottom: 20px;
     font-size: 35px;
+    font-weight: 600;
     color: #3b3b3d;
 
 
@@ -609,6 +619,7 @@ a.btn.wc:hover:before {
 .main_content .tit p {
 
     font-size: 16px;
+    font-weight: 300;
     text-align: center;
     color: #6e6e6e;
     padding-bottom: 7%;
@@ -623,7 +634,7 @@ a.btn.wc:hover:before {
 .main_content .box ul {
     padding-top: 5px;
     overflow: hidden;
-    max-width: 980px;
+    max-width: 1240px;
     margin: 0 auto;
     text-align: center;
 }
@@ -638,6 +649,7 @@ a.btn.wc:hover:before {
     display: block;
     font-size: 30px;
     color: #3b3b3d;
+    font-weight: 500;
 
 }
 
@@ -673,6 +685,7 @@ a.btn.wc:hover:before {
 
 .main_content .box ul li .white h2 {
     margin-bottom: 20px;
+    font-weight: 600;
     font-size: 16px;
     color: #3b3b3d;
 }
@@ -684,6 +697,7 @@ a.btn.wc:hover:before {
 
 .main_content .box ul li .white p {
     font-size: 14px;
+    font-weight: 300;
     color: #6e6e6e;
     line-height: 1.5;
 }
@@ -711,13 +725,17 @@ a.btn.wc:hover:before {
 .tap_menu {
 
     font-family: 'GmarketSansMedium';
+
 }
+
+.tap_menu .box {}
 
 .tap_menu .tit h2 {
     position: relative;
     margin-bottom: 30px;
     padding-bottom: 20px;
     font-size: 35px;
+    font-weight: 600;
     text-align: center;
     color: #3b3b3d;
 
@@ -736,16 +754,29 @@ a.btn.wc:hover:before {
 
 .tap_menu .tit p {
     font-size: 16px;
+    font-weight: 300;
     color: #6e6e6e;
     text-align: center;
-    padding-bottom: 10%;
+    padding-bottom: 130px;
+
 }
 
 
-.tap_menu .change_content figure {
+.tap_menu .change_content li figure img {
+
 
     display: block;
+
+    opacity: 0;
+    transition: opacity 0.5s linear;
 }
+
+
+.tap_menu .change_content li.on figure img {
+    opacity: 1;
+}
+
+
 
 
 
@@ -761,8 +792,13 @@ a.btn.wc:hover:before {
     left: 0;
     width: 50%;
     height: 100%;
-    background: #093968;
+
+
+
 }
+
+
+
 
 
 .tap_menu .box .change_game span {
@@ -775,6 +811,7 @@ a.btn.wc:hover:before {
     right: 0;
     width: 50%;
     height: 100%;
+
 }
 
 .tap_menu .box .content_change span {
@@ -782,9 +819,25 @@ a.btn.wc:hover:before {
 }
 
 
-.tap_menu .box .color_change span.on {
-    background: white;
-    color: #093968;
+.tap_menu .box .color_change.on span {
+
+    color: #3b3b3d;
+    background: #ffffff;
+}
+
+
+.tap_menu .box .change_game figure.on {}
+
+
+.tap_menu .box {}
+
+
+.tap_menu .box .on {
+
+    background: #093968;
+    -webkit-transition: background 1000ms;
+    transition: background 1000ms;
+
 }
 
 
@@ -803,7 +856,10 @@ a.btn.wc:hover:before {
 
 
 
+
 }
+
+
 
 
 /* .tap_menu .box .color_change span:hover {
@@ -832,12 +888,14 @@ a.btn.wc:hover:before {
 
 .tap_menu .change_content figure img {
     position: relative;
-    margin: 0 0 10px 0;
 
 
 }
 
-.tap_menu .change_content figure.om img {}
+
+
+
+
 
 
 
@@ -846,13 +904,16 @@ a.btn.wc:hover:before {
 .tap_menu .change_content .white {
     position: absolute;
     font-size: 35px;
+    font-weight: 600;
     color: #fff;
     line-height: 1.5;
     top: 10%;
-    left: 20%;
+    left: 22%;
 
 
 }
+
+
 
 
 .tap_menu .change_content .white2 {
@@ -861,22 +922,29 @@ a.btn.wc:hover:before {
     color: #fff;
     line-height: 1.5;
     top: 30%;
-    left: 20%;
+    left: 22%;
+
+
 
 }
 
 .tap_menu .change_content p {
     position: absolute;
+
+
     display: inline-block;
-    padding: 10px;
+    padding: 13px;
     top: 60%;
-    left: 20%;
-    font-size: 16px;
+    left: 22%;
+    font-size: 14px;
+    font-weight: 300;
     color: #ededed;
     line-height: 1.5;
     background: #093968;
-}
 
+
+
+}
 
 
 .tap_menu .change_content .back {
@@ -887,11 +955,12 @@ a.btn.wc:hover:before {
 
     position: absolute;
     font-size: 35px;
+    font-weight: 600;
     color: #fff;
 
     line-height: 1.5;
     top: 10%;
-    left: 65%;
+    left: 64%;
 
 
 
@@ -901,14 +970,18 @@ a.btn.wc:hover:before {
 .tap_menu .change_content .blue2 {
     position: absolute;
     display: inline-block;
-    padding: 10px;
+    padding: 13px;
+
     top: 70%;
-    left: 62%;
-    font-size: 16px;
+    left: 64%;
+    font-size: 14px;
     color: #ededed;
     line-height: 1.5;
     background: #093968;
+
 }
+
+
 
 
 
@@ -928,7 +1001,8 @@ a.btn.wc:hover:before {
 .shop_menu {
     font-family: 'GmarketSansMedium';
     position: relative;
-    padding-bottom: 250px;
+
+    padding-bottom: 180px;
 }
 
 
@@ -944,6 +1018,7 @@ a.btn.wc:hover:before {
     margin-bottom: 30px;
     padding-bottom: 20px;
     font-size: 35px;
+    font-weight: 600;
     color: #3b3b3d;
     text-align: center;
 
@@ -962,6 +1037,7 @@ a.btn.wc:hover:before {
 
 .shop_menu .tit p {
     font-size: 16px;
+    font-weight: 300;
     color: #6e6e6e;
     text-align: center;
     padding-bottom: 2%;
@@ -993,24 +1069,33 @@ a.btn.wc:hover:before {
 .shop_menu .swiper img {
 
     position: absolute;
-    right: 46%;
-    bottom: 185px;
+    width: 34%;
+    right: 45.4%;
+    bottom: 180px;
     overflow: hidden;
 }
 
 .shop_menu .right {
     position: absolute;
-    top: 17%;
-    left: 60%;
+    bottom: 400px;
+    left: 1200px;
     cursor: pointer;
 }
 
+.shop_menu .right .touch {}
+
 .shop_menu .touch img {
-    margin-left: 10px;
+    margin-left: 5px;
+}
+
+
+.shop_menu .touch .icon {
+    margin-right: 10px;
 }
 
 .shop_menu .right ul {
-    line-height: 70px;
+    display: inline-block;
+    line-height: 2
 }
 
 .shop_menu .right ul span {
@@ -1022,7 +1107,91 @@ a.btn.wc:hover:before {
     color: #6e6e6e;
 }
 
+.shop_menu .icon {
 
+    display: block;
+    position: absolute;
+    border: 2px solid #093968;
+    border-radius: 50px;
+
+    padding: 11px;
+    right: 100%;
+
+}
+
+.shop_menu figure {
+    margin-top: 8%;
+
+}
+
+.shop_menu li.on .icon {}
+
+
+.shop_menu .icon_1::before {
+
+    content: "";
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: url(../img/chart.png) no-repeat center;
+
+
+}
+
+
+
+
+.shop_menu .icon_2::before {
+
+    content: "";
+    display: block;
+
+    width: 38px;
+    height: 38px;
+    background: url(../img/calendar.png) no-repeat center;
+    ;
+
+
+}
+
+
+
+.shop_menu .icon_3::before {
+
+    content: "";
+    display: block;
+
+    width: 38px;
+    height: 38px;
+    background: url(../img/trade.PNG) no-repeat center;
+    ;
+
+
+}
+
+
+
+.shop_menu .icon_4::before {
+
+    content: "";
+    display: block;
+
+    width: 38px;
+    height: 38px;
+    background: url(../img/transaction.png) no-repeat center;
+    ;
+
+
+}
+
+
+
+
+
+
+
+
+.shop_menu .icon_1::before {}
 
 
 

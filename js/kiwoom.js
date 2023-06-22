@@ -33,6 +33,9 @@ $(function () {
         $(this).addClass('on').siblings().removeClass('on');
     });
 
+
+
+
     // $('.shop_menu .right .touch li').on('click', function () {
     //     e.preventDefault();
     //     let idx = $(this).index();
