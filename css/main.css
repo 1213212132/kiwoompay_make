@@ -113,8 +113,10 @@ body {
 .main_visual .slogan {
 
     position: absolute;
+    max-width: 1200px;
+    padding: 0 -15px;
     top: 25%;
-    left: 18.4%;
+    left: 19%;
 
 }
 
