@@ -101,7 +101,7 @@ body {
 
 
 .main_visual {
-
+    font-family: 'GmarketSansMedium';
     position: relative;
     min-width: 100vh;
     min-height: 1000px;
@@ -110,22 +110,24 @@ body {
     /*밀어버린거*/
 }
 
+
 .main_visual .slogan {
 
     position: absolute;
-    max-width: 1200px;
-    padding: 0 -15px;
     top: 25%;
     left: 19%;
 
+
+
 }
+
 
 .main_visual .slogan p {
 
     color: #ffffff;
     font-weight: 700;
     font-size: 25px;
-    font-family: 'GmarketSansMedium';
+
 
     animation: slideLeft 1.5s forwards;
     opacity: 0;
@@ -137,13 +139,11 @@ body {
 
     color: #ffffff;
     margin: 20px 0 0 0;
-
     font-size: 40px;
-    width: 100%;
-    font-family: 'GmarketSansMedium';
-    overflow: hidden;
+
+
     white-space: nowrap;
-    animation: typingAnim 3s steps(50);
+
 }
 
 
@@ -176,7 +176,6 @@ body {
 .main_visual a.btn {
     position: absolute;
 
-    font-family: 'GmarketSansMedium';
 
 }
 
@@ -246,7 +245,6 @@ body {
     left: 0;
     font-size: 16px;
     color: #fff;
-    font-family: 'GmarketSansMedium';
     top: -10%;
 }
 
@@ -289,7 +287,6 @@ body {
     position: relative;
     display: block;
     color: #093968;
-    font-family: 'GmarketSansMedium';
 
     padding-bottom: 600px;
     /*밀어버린거 기억*/
@@ -319,7 +316,7 @@ body {
 
     height: 100%;
     white-space: nowrap;
-    overflow: hidden;
+
 
 }
 
