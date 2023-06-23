@@ -103,7 +103,7 @@ body {
 .main_visual {
 
     position: relative;
-    min-width: 100hv;
+    min-width: 100vh;
     min-height: 1000px;
     background: url(../img/main_visual_1920_summer.gif) no-repeat;
     padding-bottom: 61%;
