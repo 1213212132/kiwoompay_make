@@ -191,8 +191,8 @@ body {
     box-sizing: border-box;
     border: 3px solid #fff;
     text-align: center;
-    line-height: 37px;
-    font-size: 14px;
+    line-height: 36px;
+    font-size: 12px;
     color: #fff;
     top: 39%;
     left: 18.4%;
@@ -281,7 +281,7 @@ body {
 }
 
 
-/* 한번 aos 해봄*/
+/* 스크롤 이벤트 구현하기*/
 
 .aos_content1 {
     position: relative;
@@ -289,7 +289,7 @@ body {
     color: #093968;
     font-family: 'GmarketSansMedium';
 
-    padding-bottom: 700px;
+    padding-bottom: 600px;
     /*밀어버린거 기억*/
 
 }
@@ -360,10 +360,10 @@ body {
     box-sizing: border-box;
     border: 3px solid #093968;
     text-align: center;
-    line-height: 37px;
-    font-size: 14px;
+    line-height: 36px;
+    font-size: 12px;
     color: #093968;
-    top: 41%;
+    top: 42%;
     left: 1%;
     letter-spacing: 2px;
 
@@ -404,7 +404,7 @@ a.btn.wc:hover:before {
     position: relative;
     display: block;
     color: #093968;
-    padding-bottom: 700px;
+    padding-bottom: 600px;
     /*밀어버린거 기억*/
 
 }
@@ -423,11 +423,15 @@ a.btn.wc:hover:before {
     line-height: 1em;
 }
 
+
+
+
+
 .aos_content2 .white {
 
     position: absolute;
     left: 38.3%;
-    top: 11%;
+    top: 10.9%;
     color: #ffffff;
     width: 222.383px;
     height: 100%;
@@ -479,10 +483,10 @@ a.btn.wc:hover:before {
     box-sizing: border-box;
     border: 3px solid #093968;
     text-align: center;
-    line-height: 37px;
-    font-size: 14px;
+    line-height: 36px;
+    font-size: 12px;
 
-    top: 54.5%;
+    top: 51%;
     left: 88%;
     letter-spacing: 2px;
 
@@ -571,8 +575,9 @@ a.btn.wc:hover:before {
     box-sizing: border-box;
     border: 3px solid #093968;
     text-align: center;
-    line-height: 37px;
-    font-size: 14px;
+    line-height: 36px;
+    font-size: 12px;
+
     color: #093968;
     top: 47%;
     left: 5.16%;
@@ -622,7 +627,7 @@ a.btn.wc:hover:before {
     font-weight: 300;
     text-align: center;
     color: #6e6e6e;
-    padding-bottom: 7%;
+    padding-bottom: 3%
 }
 
 .main_content .box {
@@ -825,8 +830,19 @@ a.btn.wc:hover:before {
     background: #ffffff;
 }
 
+/* .tap_menu .box .tap_content p {
+    display: block;
 
-.tap_menu .box .change_game figure.on {}
+    opacity: 0;
+    transition: opacity 0.5s linear;
+
+}
+
+.tap_menu .box .tap_content .on p {
+    opacity: 1;
+    transition: 0.3s linear;
+}
+ */
 
 
 .tap_menu .box {}
@@ -1051,20 +1067,23 @@ a.btn.wc:hover:before {
 
 }
 
-.shop_menu .line1 {
+/* .shop_menu .line1 {
     position: absolute;
     top: 40px;
     right: 80px;
     width: 10px;
     height: 150px;
     background: #093968;
-}
+}  라인 잡는거 */
 
 
 /* .box2 img {
     width: 100px;
 }
  */
+
+
+/* swiper로 탭메뉴 만들기 */
 
 .shop_menu .swiper img {
 
@@ -1077,7 +1096,7 @@ a.btn.wc:hover:before {
 
 .shop_menu .right {
     position: absolute;
-    bottom: 400px;
+    bottom: 380px;
     left: 1200px;
     cursor: pointer;
 }
@@ -1115,7 +1134,7 @@ a.btn.wc:hover:before {
     border-radius: 50px;
 
     padding: 11px;
-    right: 100%;
+    right: 102.5%;
 
 }
 
@@ -1196,7 +1215,7 @@ a.btn.wc:hover:before {
 
 
 
-/* footer */
+/* footer float쓰면서 만들어보기*/
 
 
 .footer {
@@ -1297,6 +1316,6 @@ a.btn.wc:hover:before {
 
 .footer_txt .left {
     position: absolute;
-    right: 7.5%;
+    right: 6.5%;
 
 }

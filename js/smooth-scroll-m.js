@@ -31,7 +31,7 @@ $(function () {
             callParentNode(event.target);
         }
         //스크롤이 일어나면 안되는 위치태그의 id를 넣어주세요
-        var impossibility = new Array("membershipTerms", "privacyStatement");
+        var impossibility = new Array(".main_content", ".tap_menu", ".shop_menu");
         for (var i = 0; event.path.length > i; i++) {
             for (var j = 0; impossibility.length > j; j++) {
                 if (event.path[i].getAttribute && event.path[i].getAttribute("id") == impossibility[j]) return;
@@ -46,7 +46,7 @@ $(function () {
         var scrollDistance = $window.height() / distance_offset;
         var delta = 0;
         if (smoothScroll_passive()) {
-            delta = event.wheelDelta / 100 || -event.originalEvent.detail / 3;
+            delta = event.wheelDelta / 137 || -event.originalEvent.detail / 3;
         } else {
             if (typeof event.originalEvent.deltaY != "undefined") {
                 delta = -event.originalEvent.deltaY / 120;

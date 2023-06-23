@@ -26,6 +26,10 @@ $(function () {
             clickable: true,
         },
     });
+
+
+
+
     $('.box .color_change ').on('click', function (e) {
         e.preventDefault();
         let idx = $(this).index();
