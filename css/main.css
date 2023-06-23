@@ -118,7 +118,6 @@ body {
     left: 19%;
 
 
-
 }
 
 
@@ -139,6 +138,7 @@ body {
 
     color: #ffffff;
     margin: 20px 0 0 0;
+
     font-size: 40px;
 
 
@@ -310,7 +310,7 @@ body {
 .aos_content1 .white {
 
     position: absolute;
-    left: 36.9%;
+    left: 35%;
     top: 5%;
     color: #ffffff;
 
