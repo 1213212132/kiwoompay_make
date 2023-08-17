@@ -1,0 +1,1082 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+body {
+    overflow-x: hidden;
+}
+
+.wrp {
+    min-width: 1200px;
+    font-family: 'Pretendard-Regular';
+}
+
+.header {
+
+    background: rgb(7, 24, 42);
+
+    position: sticky;
+    top: 0;
+
+    border-bottom: 1px solid transparent;
+    z-index: 999;
+}
+
+
+.header.on {
+    background: #0e3055
+}
+
+.header a {
+    display: block;
+}
+
+.header .menu_wrap {
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .gnb>ul {
+    font-family: 'GmarketSansMedium';
+    display: flex;
+    font-size: 18px;
+    gap: 40px;
+    color: #ffffff;
+    padding-left: 130px;
+
+}
+
+.header .gnb>ul>a {
+
+    font-size: 16px;
+    white-space: nowrap;
+
+}
+
+.header .gnb>ul>li {
+    position: relative;
+    white-space: nowrap;
+    word-break: keep-all;
+    margin-right: 5%;
+}
+
+
+.header .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 1px;
+    height: 12px;
+    background: #e4007f;
+    transform: translate(0, -50%);
+}
+
+
+.header .sub {
+    height: 0;
+    overflow: hidden;
+
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+
+    color: #222;
+    font-size: 11px;
+    transition: 0.3s;
+}
+
+.header .gnb:hover>ul>li .sub {
+    height: 200px;
+}
+
+.header .gnb {
+    /* position: relative; */
+}
+
+.header .gnb::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #ddd;
+    background: #fff;
+    z-index: 999;
+
+    transition: 0.5s;
+}
+
+.header .gnb:hover::before {
+    height: 200px;
+}
+
+.header .top li {
+    font-family: 'GmarketSansMedium';
+    display: flex;
+    font-size: 14px;
+    gap: 30px;
+    color: #ffffff;
+}
+
+
+.header .top>li>a~a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 450px;
+    width: 1px;
+    height: 13px;
+    background: #e4007f;
+    transform: translate(0, -50%);
+}
+
+/* .header .top li>a {
+    border: 3px solid #ffffff;
+
+    padding: 10px 10px 10px 10px;
+} */
+
+
+/* 헤더 끝*/
+
+
+.main_visual {
+    font-family: 'GmarketSansMedium';
+    position: relative;
+    min-width: 100vh;
+    min-height: 1000px;
+    background: url(../img/main_visual_1920_summer.gif) no-repeat;
+
+}
+
+
+.main_visual .slogan {
+
+    position: absolute;
+    top: 25%;
+    left: 19%;
+
+
+}
+
+
+.main_visual .slogan p {
+
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 25px;
+
+
+    animation: slideLeft 1.5s forwards;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.main_visual .slogan h2 {
+
+    color: #ffffff;
+    margin: 20px 0 0 0;
+
+    font-size: 40px;
+
+
+    white-space: nowrap;
+
+}
+
+
+@keyframes typingAnim {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+
+
+.main_visual a.btn {
+    position: absolute;
+
+
+}
+
+
+
+
+
+.main_visual a.btn.wc {
+
+    position: absolute;
+    display: inline-block;
+    width: 120px;
+
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+    color: #fff;
+    top: 39%;
+    left: 19%;
+    letter-spacing: 2px;
+    z-index: 888;
+
+
+}
+
+
+.main_visual a.btn.wc {
+
+    position: absolute;
+    display: inline-block;
+    width: 120px;
+
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    text-align: center;
+    line-height: 36px;
+    font-size: 12px;
+    color: #fff;
+    top: 39%;
+    left: 19%;
+    letter-spacing: 2px;
+    z-index: 888;
+
+
+}
+
+
+
+
+
+a.btn.wc:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #093968;
+    transition: width 0.3s;
+}
+
+a.btn.wc:hover {
+    color: #fff;
+}
+
+
+
+
+a.btn.wc:hover:before {
+    z-index: -999;
+    width: 100%;
+}
+
+.main_visual .right_arrow {
+    position: absolute;
+    top: 35%;
+    left: 49.4%;
+    transform: translate(-50%, -50%);
+    max-width: 1300px;
+    width: 100%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.main_visual .right_arrow span {
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    color: #fff;
+    top: -10%;
+}
+
+.main_visual .right_arrow .right {
+    position: absolute;
+    left: 5.5%;
+    width: 100px;
+    height: 30px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.main_visual .right_arrow .right::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 1%;
+    right: 1%;
+    height: 2px;
+    background: #fff;
+}
+
+.main_visual .right_arrow .right::after {
+    content: "";
+    position: absolute;
+    top: 60%;
+    right: 0;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+}
+
+
+
+/*  */
+
+/*여기서 부터 메인콘텐츠*/
+
+.main_content {
+
+    font-family: 'GmarketSansMedium';
+    padding-bottom: 120px;
+}
+
+.main_content .tit h2 {
+
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #3b3b3d;
+
+
+
+
+}
+
+
+
+
+.main_content .tit p {
+
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    color: #6e6e6e;
+    padding-bottom: 3%
+}
+
+.main_content .box {
+    height: 272px;
+    padding-top: 30px;
+    background: #f3f4f9;
+}
+
+.main_content .box ul {
+    padding-top: 5px;
+    overflow: hidden;
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main_content .box ul li {
+    float: left;
+    width: 33.333%;
+}
+
+
+.main_content .box ul li span {
+    display: block;
+    font-size: 30px;
+    color: #3b3b3d;
+    font-weight: 500;
+
+}
+
+.main_content .box ul li a {
+    display: block;
+    width: 70.411%;
+    margin: 30px auto;
+    padding: 18px 0;
+    font-size: 16px;
+    color: #fff;
+    background: #3b3b3d;
+
+}
+
+
+.main_content .box ul li a:hover {
+    background: #e4007f;
+}
+
+.main_content .box ul li .white {
+    padding-top: 30px;
+    background: #fff;
+}
+
+.main_content .box ul li .white i {
+    display: block;
+    width: 70.411%;
+    height: 15px;
+    margin: 0 auto;
+    border: 2px solid #093968;
+    border-bottom: 0;
+}
+
+.main_content .box ul li .white h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3b3b3d;
+}
+
+
+
+
+
+
+.main_content .box ul li .white p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #6e6e6e;
+    line-height: 1.5;
+}
+
+.main_content .tit h2 i {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 88px;
+    height: 2px;
+    margin-left: -44px;
+    background: #093968;
+}
+
+
+
+
+
+
+
+
+/*탭메뉴*/
+
+.tap_menu {
+
+    font-family: 'GmarketSansMedium';
+
+}
+
+.tap_menu .box {}
+
+.tap_menu .tit h2 {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: #3b3b3d;
+
+}
+
+.tap_menu .tit h2 i {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 88px;
+    height: 2px;
+    margin-left: -44px;
+    background: #093968;
+}
+
+.tap_menu .tit p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #6e6e6e;
+    text-align: center;
+    padding-bottom: 130px;
+
+}
+
+
+.tap_menu .change_content li figure img {
+
+
+    display: block;
+
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+
+.tap_menu .change_content li.on figure img {
+    opacity: 1;
+}
+
+
+
+
+
+.tap_menu .box {
+    position: relative;
+    height: 600px;
+}
+
+
+.tap_menu .box .change_game {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 50%;
+    height: 100%;
+
+
+
+}
+
+
+
+
+
+.tap_menu .box .change_game span {
+    right: 0;
+}
+
+.tap_menu .box .content_change {
+    position: absolute;
+    top: -15%;
+    right: 0;
+    width: 50%;
+    height: 100%;
+
+}
+
+.tap_menu .box .content_change span {
+    left: 0;
+}
+
+
+.tap_menu .box .color_change.on span {
+
+    color: #3b3b3d;
+    background: #ffffff;
+}
+
+/* .tap_menu .box .tap_content p {
+    display: block;
+
+    opacity: 0;
+    transition: opacity 0.5s linear;
+
+}
+
+.tap_menu .box .tap_content .on p {
+    opacity: 1;
+    transition: 0.3s linear;
+}
+ */
+
+
+.tap_menu .box {}
+
+
+.tap_menu .box .on {
+
+    background: #093968;
+    -webkit-transition: background 1000ms;
+    transition: background 1000ms;
+
+}
+
+
+.tap_menu .box .color_change span {
+    position: absolute;
+    top: 30px;
+    display: block;
+    width: 90px;
+    padding: 12px 0;
+    font-size: 16px;
+    color: #fff;
+    background: #093968;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+
+
+
+
+}
+
+
+
+
+/* .tap_menu .box .color_change span:hover {
+    color: #3b3b3d;
+    background: #ffffff;
+}
+ */
+
+
+.change_game {}
+
+
+
+.tap_menu .change_content li {
+    height: 0;
+    overflow: hidden;
+
+}
+
+.tap_menu .change_content li.on {
+
+    height: auto;
+}
+
+
+
+.tap_menu .change_content figure img {
+    position: relative;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.tap_menu .change_content .white {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.5;
+    top: 10%;
+    left: 22%;
+
+
+}
+
+
+
+
+.tap_menu .change_content .white2 {
+    position: absolute;
+    font-size: 35px;
+    color: #fff;
+    line-height: 1.5;
+    top: 30%;
+    left: 22%;
+
+
+
+}
+
+.tap_menu .change_content p {
+    position: absolute;
+
+
+    display: inline-block;
+    padding: 13px;
+    top: 60%;
+    left: 22%;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ededed;
+    line-height: 1.5;
+    background: #093968;
+
+
+
+}
+
+
+.tap_menu .change_content .back {
+    position: relative;
+}
+
+.tap_menu .change_content .white3 {
+
+    position: absolute;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+
+    line-height: 1.5;
+    top: 10%;
+    left: 64%;
+
+
+
+}
+
+
+.tap_menu .change_content .blue2 {
+    position: absolute;
+    display: inline-block;
+    padding: 13px;
+
+    top: 70%;
+    left: 64%;
+    font-size: 14px;
+    color: #ededed;
+    line-height: 1.5;
+    background: #093968;
+
+}
+
+
+
+
+
+
+
+.tap_menu .color_change .on {
+
+    background: #f2f2f2;
+
+}
+
+
+
+/*세션3*/
+
+
+.shop_menu {
+    font-family: 'GmarketSansMedium';
+    position: relative;
+
+    padding-bottom: 180px;
+}
+
+
+
+.shop_menu>div:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.shop_menu .tit h2 {
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #3b3b3d;
+    text-align: center;
+
+}
+
+.shop_menu .tit h2 i {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 88px;
+    height: 2px;
+    margin-left: -44px;
+    background: #093968;
+}
+
+.shop_menu .tit p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #6e6e6e;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+
+.shop_menu .box {
+
+    position: relative;
+
+
+}
+
+/* .shop_menu .line1 {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    width: 10px;
+    height: 150px;
+    background: #093968;
+}  라인 잡는거 */
+
+
+/* .box2 img {
+    width: 100px;
+}
+ */
+
+
+/* swiper로 탭메뉴 만들기 */
+
+.shop_menu .swiper img {
+
+    position: absolute;
+    width: 34%;
+    right: 45.4%;
+    bottom: 180px;
+    overflow: hidden;
+}
+
+.shop_menu .right {
+    position: absolute;
+    bottom: 380px;
+    left: 1235px;
+    cursor: pointer;
+}
+
+.shop_menu .right .touch {}
+
+.shop_menu .touch img {
+    margin-left: 5px;
+}
+
+
+.shop_menu .touch .icon {
+    margin-right: 10px;
+}
+
+.shop_menu .right ul {
+    display: inline-block;
+    line-height: 2
+}
+
+.shop_menu .right ul span {
+    font-size: 18px;
+}
+
+.shop_menu .right ul p {
+    font-size: 14px;
+    color: #6e6e6e;
+}
+
+.shop_menu .icon {
+
+    display: block;
+    position: absolute;
+    border: 2px solid #093968;
+    border-radius: 50px;
+
+    padding: 11px;
+    right: 102.5%;
+
+}
+
+.shop_menu figure {
+    margin-top: 8%;
+
+}
+
+.shop_menu li.on .icon {}
+
+
+.shop_menu .icon_1::before {
+
+    content: "";
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: url(../img/chart.png) no-repeat center;
+
+
+}
+
+
+
+
+.shop_menu .icon_2::before {
+
+    content: "";
+    display: block;
+
+    width: 38px;
+    height: 38px;
+    background: url(../img/calendar.png) no-repeat center;
+    ;
+
+
+}
+
+
+
+.shop_menu .icon_3::before {
+
+    content: "";
+    display: block;
+
+    width: 38px;
+    height: 38px;
+    background: url(../img/trade.PNG) no-repeat center;
+    ;
+
+
+}
+
+
+
+.shop_menu .icon_4::before {
+
+    content: "";
+    display: block;
+
+    width: 38px;
+    height: 38px;
+    background: url(../img/transaction.png) no-repeat center;
+    ;
+
+
+}
+
+
+
+
+
+
+
+
+.shop_menu .icon_1::before {}
+
+
+
+
+/* footer float쓰면서 만들어보기*/
+
+
+.footer {
+    font-family: 'GmarketSansMedium';
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #0e3055;
+}
+
+.footer .footer_box {
+    height: auto;
+    background: #093968;
+}
+
+
+.footer .box {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.footer_box .box img {
+    position: absolute;
+    left: 19%;
+    top: 19px;
+}
+
+.footer .box:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+.footer .box .left {
+    float: left;
+    width: 30%;
+    padding: 30px 0 0 50px;
+    box-sizing: border-box;
+}
+
+
+
+.footer .box .right {
+    float: left;
+    width: 70%;
+    padding: 30px 0 0 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.footer .box .right ul {
+    float: left;
+    height: 170px;
+    margin-right: 50px;
+}
+
+
+
+
+.footer .box .right ul li {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #b0c0da;
+}
+
+.footer .box .right ul li {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #b0c0da;
+}
+
+
+
+.footer .box .right ul li a:hover {
+    color: #e4007f;
+}
+
+
+.footer .box .footer_txt {
+
+    width: 70%;
+    float: right;
+}
+
+.footer .box .footer_txt p {
+    font-size: 12px;
+    color: #b0c0da;
+    line-height: 1.5;
+}
+
+.footer_txt .left {
+    position: absolute;
+    right: 6.5%;
+
+}
