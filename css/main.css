@@ -2,8 +2,8 @@ body {
     overflow-x: hidden;
 }
 
-.wrp {
-    min-width: 1200px;
+.wrap {
+
     font-family: 'Pretendard-Regular';
 }
 
@@ -85,11 +85,12 @@ body {
     z-index: 999;
 
     text-align: center;
-    width: 150%;
+    width: 100%;
     line-height: 40px;
 
     color: #222;
     transition: 0.5s;
+
 }
 
 .header .gnb:hover .sub {
@@ -99,7 +100,7 @@ body {
 .header .gnb>ul>li .sub a {
     display: block;
     color: #444;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 30px;
 }
 
@@ -155,8 +156,314 @@ body {
     padding: 10px 10px 10px 10px;
 } */
 
+.mobile_btn {
+    display: none;
+}
+
+
 
 /* 헤더 끝*/
+
+
+@media (max-width : 768px) {
+    body {
+
+        overflow-x: hidden;
+    }
+
+    .wrap {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        overflow: hidden;
+        font-family: 'Pretendard-Regular';
+    }
+
+    .header {
+
+        background: rgb(7, 24, 42);
+
+        position: sticky;
+        top: 0;
+
+        border-bottom: 1px solid transparent;
+        z-index: 999;
+    }
+
+
+    .header.on {
+        background: #0e3055;
+    }
+
+    .header a {
+        display: block;
+    }
+
+    .header h1 {
+        /* r */
+        position: fixed;
+        z-index: 1000;
+        padding: 0 0 0 15px;
+    }
+
+
+    .header .menu_wrap {
+        height: 100px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .header .gnb {
+        /* r */
+        position: fixed;
+        inset: 0 auto 0 100%;
+        background: #0e3055;
+        bottom: 505px;
+        width: 100%;
+
+        transition: 0.5s;
+    }
+
+    .header .gnb.on {
+        /* r */
+        inset: 0 auto 0 0;
+    }
+
+
+
+
+
+    .header .gnb>ul {
+        font-family: 'GmarketSansMedium';
+        display: flex;
+        font-size: 18px;
+        gap: 40px;
+        color: #ffffff;
+        padding-left: 130px;
+
+        /* r */
+
+        flex-direction: column;
+        gap: 0;
+        padding: 150px 30px 0 30px;
+
+    }
+
+    .header .gnb>ul>a {
+
+        font-size: 16px;
+        white-space: nowrap;
+
+        /* r */
+        border-bottom: 1px solid #666;
+    }
+
+    .header .gnb>ul>li {
+        position: relative;
+        line-height: 100px;
+
+        /* r */
+        line-height: 40px;
+    }
+
+
+    .header .gnb>ul>li::after {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 0;
+        height: 3px;
+        background: #fff;
+
+        /*r*/
+        display: none;
+    }
+
+    .header .gnb>ul>li:hover::after {
+        width: 100%;
+        transition: 0.5s;
+
+        /*r*/
+        display: none;
+    }
+
+    .header .gnb>ul>li .sub {
+        height: 0;
+        overflow: hidden;
+
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translate(0, 0);
+        z-index: 999;
+
+        text-align: center;
+
+        line-height: 40px;
+
+        color: #222;
+        transition: 0.5s;
+
+        /* r */
+
+        width: 100%;
+        text-align: left;
+        transition: none;
+        position: static;
+        background: #fff;
+        padding: 0 0 0 0;
+    }
+
+    .header .gnb:hover .sub {
+        height: 120px;
+
+        /* r */
+        overflow: visible;
+        display: none;
+    }
+
+    .header .gnb>ul>li .sub a {
+        display: block;
+        color: #444;
+        font-size: 12px;
+        line-height: 30px;
+        /* r */
+        padding: 0 0 0 15px;
+    }
+
+
+    .header .gnb::before {
+        content: "";
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        border-top: 1px solid #ddd;
+        background: #fff;
+        z-index: 999;
+
+        transition: 0.5s;
+
+        /*r*/
+
+        display: none;
+    }
+
+    .header .gnb:hover::before {
+        /*r*/
+        display: none;
+        height: 200px;
+    }
+
+
+    .header .gnb {
+        /* position: relative; */
+    }
+
+
+
+    .header .top li {
+
+        display: flex;
+        font-size: 14px;
+        gap: 30px;
+        color: #ffffff;
+        /*r*/
+        display: none;
+    }
+
+
+    .header .top>li>a~a::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 450px;
+        width: 1px;
+        height: 13px;
+        background: #e4007f;
+        transform: translate(0, -50%);
+
+        /*r*/
+        display: none;
+    }
+
+    .mobile_btn {
+        /* r */
+
+
+        display: block;
+
+        position: fixed;
+
+        inset: 30px 30px auto auto;
+        z-index: 999;
+        width: 30px;
+        height: 30px;
+        background: #ddd;
+        border-radius: 5px;
+    }
+
+    .mobile_btn::before,
+    .mobile_btn::after {
+        content: "";
+        position: absolute;
+        inset: 14px 5px auto 5px;
+        height: 2px;
+        background: #444;
+
+
+    }
+
+    .mobile_btn.on::before {
+        transform: rotate(45deg);
+        transition: 0.5s 0.2s;
+    }
+
+    .mobile_btn.on::after {
+        transform: rotate(-225deg);
+        transition: 0.5s 0.6s;
+    }
+
+
+    .mobile_btn button {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    .mobile_btn button::before,
+    .mobile_btn button::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        background: #444;
+    }
+
+    .mobile_btn button::before {
+        inset: 7px 5px auto 5px;
+    }
+
+    .mobile_btn button::after {
+        inset: auto 5px 7px 5px;
+    }
+
+    .mobile_btn.on button::before {
+        display: none;
+    }
+
+    .mobile_btn.on button::after {
+        display: none;
+    }
+
+}
+
+
+/**/
 
 
 .main_visual {
@@ -164,7 +471,7 @@ body {
     position: relative;
     min-width: 100vh;
     min-height: 1000px;
-    background: url(../img/main_visual_1920_summer.gif) no-repeat;
+    background: url(../img/main_visual_1920_summer.gif) no-repeat center center/cover;
 
 }
 
@@ -360,7 +667,228 @@ a.btn.wc:hover:before {
     transform-origin: right bottom;
 }
 
+@media (max-width : 768px) {
 
+    * {
+        outline: 1px solid red;
+    }
+
+    .main_visual {
+        font-family: 'GmarketSansMedium';
+        position: relative;
+        min-width: 100vh;
+        min-height: 1000px;
+        background: url(../img/main_visual_1920_summer.gif) no-repeat center center/cover;
+
+        /*r*/
+        min-width: 30vh;
+        min-height: 570px;
+    }
+
+
+    .main_visual .slogan {
+
+        position: absolute;
+        top: 25%;
+        left: 8%;
+
+        /*r*/
+
+    }
+
+
+    .main_visual .slogan p {
+
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 25px;
+
+
+        animation: slideLeft 1.5s forwards;
+        opacity: 0;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        /*r*/
+        font-size: 16px;
+    }
+
+    .main_visual .slogan h2 {
+
+        color: #ffffff;
+        margin: 20px 0 0 0;
+
+        font-size: 40px;
+
+
+        white-space: nowrap;
+
+        /*r*/
+        font-size: 22px;
+
+    }
+
+
+    @keyframes typingAnim {
+        from {
+            width: 0
+        }
+
+        to {
+            width: 100%
+        }
+    }
+
+
+    @keyframes slideLeft {
+        from {
+            opacity: 0;
+            transform: translateX(200px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+
+
+
+
+    .main_visual a.btn {
+        position: absolute;
+
+
+    }
+
+
+
+
+
+    .main_visual a.btn.wc {
+
+        position: absolute;
+        display: inline-block;
+        width: 120px;
+
+        box-sizing: border-box;
+        border: 3px solid #fff;
+        text-align: center;
+        line-height: 36px;
+        font-size: 12px;
+        color: #fff;
+        top: 39%;
+        left: 19%;
+        letter-spacing: 2px;
+        z-index: 888;
+
+        /*r*/
+        top: 39%;
+        left: 8%;
+    }
+
+
+    .main_visual a.btn.wc {
+
+        position: absolute;
+        display: inline-block;
+        width: 120px;
+
+        box-sizing: border-box;
+        border: 3px solid #fff;
+        text-align: center;
+        line-height: 36px;
+        font-size: 12px;
+        color: #fff;
+        top: 39%;
+        left: 19%;
+        letter-spacing: 2px;
+        z-index: 888;
+
+        /*r*/
+        display: none;
+    }
+
+
+
+
+
+    a.btn.wc:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background: #093968;
+        transition: width 0.3s;
+    }
+
+    a.btn.wc:hover {
+        color: #fff;
+    }
+
+
+
+
+    a.btn.wc:hover:before {
+        z-index: -999;
+        width: 100%;
+    }
+
+    .main_visual .right_arrow {
+        position: absolute;
+        top: 35%;
+        left: 49.4%;
+        transform: translate(-50%, -50%);
+        max-width: 1300px;
+        width: 100%;
+        user-select: none;
+        cursor: pointer;
+
+        /*r*/
+        display: none;
+    }
+
+    .main_visual .right_arrow span {
+        position: absolute;
+        left: 0;
+        font-size: 16px;
+        color: #fff;
+        top: -10%;
+    }
+
+    .main_visual .right_arrow .right {
+        position: absolute;
+        left: 5.5%;
+        width: 100px;
+        height: 30px;
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    .main_visual .right_arrow .right::before {
+        content: "";
+        position: absolute;
+        top: 60%;
+        left: 1%;
+        right: 1%;
+        height: 2px;
+        background: #fff;
+    }
+
+    .main_visual .right_arrow .right::after {
+        content: "";
+        position: absolute;
+        top: 60%;
+        right: 0;
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        transform: rotate(45deg);
+        transform-origin: right bottom;
+    }
+
+}
 
 /*  */
 
