@@ -191,7 +191,12 @@ body {
 
 
     .header.on {
+
+
         background: #0e3055;
+
+        /*r*/
+        display: none;
     }
 
     .header a {
@@ -669,9 +674,6 @@ a.btn.wc:hover:before {
 
 @media (max-width : 768px) {
 
-    * {
-        outline: 1px solid red;
-    }
 
     .main_visual {
         font-family: 'GmarketSansMedium';
@@ -1018,6 +1020,151 @@ a.btn.wc:hover:before {
 
 
 
+@media (max-width : 768px) {
+
+    .main_content {
+
+        font-family: 'GmarketSansMedium';
+        padding-bottom: 120px;
+    }
+
+    .main_content .tit h2 {
+
+        position: relative;
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        font-size: 35px;
+        font-weight: 600;
+        color: #3b3b3d;
+
+        /*r*/
+        font-size: 20px;
+
+
+    }
+
+
+
+
+    .main_content .tit p {
+
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        color: #6e6e6e;
+        padding-bottom: 3%;
+
+        /*r*/
+        font-size: 14px;
+    }
+
+    .main_content .box {
+        height: 272px;
+        padding-top: 30px;
+        background: #f3f4f9;
+    }
+
+    .main_content .box ul {
+        padding-top: 5px;
+        overflow: hidden;
+        max-width: 1240px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .main_content .box ul li {
+        float: left;
+        width: 33.333%;
+    }
+
+
+    .main_content .box ul li span {
+        display: block;
+        font-size: 30px;
+        color: #3b3b3d;
+        font-weight: 500;
+
+        /*r*/
+        font-size: 20px;
+
+    }
+
+    .main_content .box ul li a {
+        display: block;
+        width: 70.411%;
+        margin: 30px auto;
+        padding: 18px 0;
+        font-size: 16px;
+        color: #fff;
+        background: #3b3b3d;
+
+        /*r*/
+        font-size: 12px;
+
+    }
+
+
+    .main_content .box ul li a:hover {
+        background: #e4007f;
+    }
+
+    .main_content .box ul li .white {
+        padding-top: 30px;
+        background: #fff;
+    }
+
+    .main_content .box ul li .white i {
+        display: block;
+        width: 70.411%;
+        height: 15px;
+        margin: 0 auto;
+        border: 2px solid #093968;
+        border-bottom: 0;
+    }
+
+    .main_content .box ul li .white h2 {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #3b3b3d;
+
+        /*r*/
+        width: 100%;
+
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+
+
+
+
+
+    .main_content .box ul li .white p {
+        font-size: 14px;
+        font-weight: 300;
+        color: #6e6e6e;
+        line-height: 1.5;
+
+        /*r*/
+        font-size: 12px;
+    }
+
+    .main_content .tit h2 i {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+        width: 88px;
+        height: 2px;
+        margin-left: -44px;
+        background: #093968;
+    }
+
+
+
+}
 
 
 
@@ -1308,6 +1455,328 @@ a.btn.wc:hover:before {
 
 
 
+@media (max-width: 768px) {
+    /*탭메뉴*/
+
+    .tap_menu {
+
+        font-family: 'GmarketSansMedium';
+
+    }
+
+    .tap_menu .box {}
+
+    .tap_menu .tit h2 {
+        position: relative;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+        color: #3b3b3d;
+
+        /*r*/
+        font-size: 20px;
+
+    }
+
+    .tap_menu .tit h2 i {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+        width: 88px;
+        height: 2px;
+        margin-left: -44px;
+        background: #093968;
+
+        /*r*/
+
+    }
+
+    .tap_menu .tit p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #6e6e6e;
+        text-align: center;
+        padding-bottom: 130px;
+
+        /*r*/
+        font-size: 12px;
+
+    }
+
+
+    .tap_menu .change_content li figure img {
+
+
+        display: block;
+
+        opacity: 0;
+        transition: opacity 0.5s linear;
+
+
+    }
+
+
+    .tap_menu .change_content li.on figure img {
+        opacity: 1;
+        /*r*/
+        position: relative;
+        height: 450px;
+
+
+    }
+
+
+
+
+
+    .tap_menu .box {
+        position: relative;
+        height: 600px;
+    }
+
+
+    .tap_menu .box .change_game {
+        position: absolute;
+        top: -15%;
+        left: 0;
+        width: 50%;
+        height: 100%;
+
+
+
+    }
+
+
+
+
+
+    .tap_menu .box .change_game span {
+        right: 0;
+    }
+
+    .tap_menu .box .content_change {
+        position: absolute;
+        top: -15%;
+        right: 0;
+        width: 50%;
+        height: 100%;
+
+    }
+
+    .tap_menu .box .content_change span {
+        left: 0;
+    }
+
+
+    .tap_menu .box .color_change.on span {
+
+        color: #3b3b3d;
+        background: #ffffff;
+    }
+
+    /* .tap_menu .box .tap_content p {
+    display: block;
+
+    opacity: 0;
+    transition: opacity 0.5s linear;
+
+}
+
+.tap_menu .box .tap_content .on p {
+    opacity: 1;
+    transition: 0.3s linear;
+}
+ */
+
+
+    .tap_menu .box {}
+
+
+    .tap_menu .box .on {
+
+        background: #093968;
+        -webkit-transition: background 1000ms;
+        transition: background 1000ms;
+
+
+
+    }
+
+
+    .tap_menu .box .color_change span {
+        position: absolute;
+        top: 30px;
+        display: block;
+        width: 90px;
+        padding: 12px 0;
+        font-size: 16px;
+        color: #fff;
+        background: #093968;
+        text-align: center;
+        cursor: pointer;
+        z-index: 2;
+
+
+
+
+    }
+
+
+
+
+    /* .tap_menu .box .color_change span:hover {
+    color: #3b3b3d;
+    background: #ffffff;
+}
+ */
+
+
+    .change_game {}
+
+
+
+    .tap_menu .change_content li {
+        height: 0;
+        overflow: hidden;
+
+    }
+
+    .tap_menu .change_content li.on {
+
+        height: auto;
+    }
+
+
+
+    .tap_menu .change_content figure img {
+        position: relative;
+
+    }
+
+
+
+
+
+
+
+
+
+
+    .tap_menu .change_content .white {
+        position: absolute;
+        font-size: 35px;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.5;
+        top: 10%;
+        left: 22%;
+
+        /*r*/
+        font-size: 18px;
+        left: 8%;
+    }
+
+
+
+
+    .tap_menu .change_content .white2 {
+        position: absolute;
+        font-size: 35px;
+        color: #fff;
+        line-height: 1.5;
+        top: 30%;
+        left: 22%;
+
+        /*r*/
+        display: none;
+
+    }
+
+    .tap_menu .change_content p {
+        position: absolute;
+
+
+        display: inline-block;
+        padding: 13px;
+        top: 60%;
+        left: 22%;
+        font-size: 14px;
+        font-weight: 300;
+        color: #ededed;
+        line-height: 1.5;
+        background: #093968;
+
+        /*r*/
+        top: 338px;
+        left: 8%;
+        right: 8%;
+    }
+
+
+    .tap_menu .change_content .back {
+        position: relative;
+    }
+
+    .tap_menu .change_content .white3 {
+
+        position: absolute;
+        font-size: 35px;
+        font-weight: 600;
+        color: #fff;
+
+        line-height: 1.5;
+        top: 10%;
+        left: 64%;
+
+        /*r*/
+        font-size: 18px;
+        left: 8%;
+
+    }
+
+
+    .tap_menu .change_content .blue2 {
+        position: absolute;
+        display: inline-block;
+        padding: 13px;
+
+        top: 70%;
+        left: 64%;
+        font-size: 14px;
+        color: #ededed;
+        line-height: 1.5;
+        background: #093968;
+
+        /*r*/
+
+
+        left: 8%;
+        right: 8%;
+
+    }
+
+
+
+
+
+
+
+    .tap_menu .color_change .on {
+
+        background: #f2f2f2;
+
+    }
+
+
+
+
+}
+
+
+
 /*세션3*/
 
 
@@ -1503,11 +1972,226 @@ a.btn.wc:hover:before {
 
 
 
+@media (max-width :768px) {
+
+    /*세션3*/
+
+
+    .shop_menu {
+        font-family: 'GmarketSansMedium';
+        position: relative;
+
+        padding-bottom: 180px;
+
+        /*r*/
+        display: none;
+    }
+
+
+
+    .shop_menu>div:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .shop_menu .tit h2 {
+        position: relative;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        font-size: 35px;
+        font-weight: 600;
+        color: #3b3b3d;
+        text-align: center;
+
+        /*r*/
+        font-size: 20px;
+
+    }
+
+    .shop_menu .tit h2 i {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+        width: 88px;
+        height: 2px;
+        margin-left: -44px;
+        background: #093968;
+
+    }
+
+    .shop_menu .tit p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #6e6e6e;
+        text-align: center;
+        padding-bottom: 2%;
+        /*r*/
+        font-size: 14px;
+    }
+
+
+    .shop_menu .box {
+
+        position: relative;
+
+
+    }
+
+    /* .shop_menu .line1 {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    width: 10px;
+    height: 150px;
+    background: #093968;
+}  라인 잡는거 */
+
+
+    /* .box2 img {
+    width: 100px;
+}
+ */
+
+
+    /* swiper로 탭메뉴 만들기 */
+
+    .shop_menu .swiper img {
+
+        position: absolute;
+        width: 34%;
+        right: 45.4%;
+        bottom: 180px;
+        overflow: hidden;
+        /*r*/
+
+        right: 1%;
+
+
+    }
+
+    .shop_menu .right {
+        position: absolute;
+        bottom: 380px;
+        left: 1235px;
+        cursor: pointer;
+
+
+    }
+
+    .shop_menu .right .touch {}
+
+    .shop_menu .touch img {
+        margin-left: 5px;
+
+    }
+
+
+    .shop_menu .touch .icon {
+        margin-right: 10px;
+
+    }
+
+    .shop_menu .right ul {
+        display: inline-block;
+        line-height: 2
+    }
+
+    .shop_menu .right ul span {
+        font-size: 18px;
+    }
+
+    .shop_menu .right ul p {
+        font-size: 14px;
+        color: #6e6e6e;
+    }
+
+    .shop_menu .icon {
+
+        display: block;
+        position: absolute;
+        border: 2px solid #093968;
+        border-radius: 50px;
+
+        padding: 11px;
+        right: 102.5%;
+
+    }
+
+    .shop_menu figure {
+        margin-top: 8%;
+
+    }
+
+    .shop_menu li.on .icon {}
+
+
+    .shop_menu .icon_1::before {
+
+        content: "";
+        display: block;
+        width: 38px;
+        height: 38px;
+        background: url(../img/chart.png) no-repeat center;
+        /*r*/
+        left: 15%;
+
+    }
 
 
 
 
-.shop_menu .icon_1::before {}
+    .shop_menu .icon_2::before {
+
+        content: "";
+        display: block;
+
+        width: 38px;
+        height: 38px;
+        background: url(../img/calendar.png) no-repeat center;
+        ;
+
+
+    }
+
+
+
+    .shop_menu .icon_3::before {
+
+        content: "";
+        display: block;
+
+        width: 38px;
+        height: 38px;
+        background: url(../img/trade.PNG) no-repeat center;
+        ;
+
+
+    }
+
+
+
+    .shop_menu .icon_4::before {
+
+        content: "";
+        display: block;
+
+        width: 38px;
+        height: 38px;
+        background: url(../img/transaction.png) no-repeat center;
+        ;
+
+
+    }
+
+
+
+}
+
+
+
+
 
 
 
@@ -1614,5 +2298,140 @@ a.btn.wc:hover:before {
 .footer_txt .left {
     position: absolute;
     right: 6.5%;
+
+}
+
+@media (max-width : 768px) {
+    /* footer float쓰면서 만들어보기*/
+
+
+    .footer {
+        font-family: 'GmarketSansMedium';
+        position: relative;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: #0e3055;
+
+        /*r*/
+    }
+
+    .footer .footer_box {
+        height: auto;
+        background: #093968;
+
+        padding-bottom: 20px;
+    }
+
+
+    .footer .box {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+
+
+    }
+
+    .footer_box .box img {
+        position: absolute;
+        left: 19%;
+        top: 19px;
+    }
+
+    .footer .box:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+
+    .footer .box .left {
+        float: left;
+        width: 30%;
+        padding: 30px 0 0 50px;
+        box-sizing: border-box;
+
+        /*r*/
+        width: 100%;
+
+    }
+
+
+
+    .footer .box .right {
+        float: left;
+        width: 70%;
+        padding: 30px 0 0 0;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        /*r*/
+        position: relative;
+        width: 100%;
+        top: -25px;
+        left: -15%;
+
+
+    }
+
+    .footer .box .right ul {
+        float: left;
+        height: 170px;
+        margin-right: 50px;
+
+
+        /*r*/
+        display: none;
+    }
+
+
+
+
+    .footer .box .right ul li {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+        color: #b0c0da;
+    }
+
+    .footer .box .right ul li {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: #b0c0da;
+    }
+
+
+
+    .footer .box .right ul li a:hover {
+        color: #e4007f;
+    }
+
+
+    .footer .box .footer_txt {
+
+        width: 70%;
+        float: right;
+    }
+
+    .footer .box .footer_txt p {
+        font-size: 12px;
+        color: #b0c0da;
+        line-height: 1.5;
+    }
+
+    .footer_txt .left {
+        position: absolute;
+        right: 6.5%;
+
+        /*r*/
+
+        left: 7%;
+        top: 150px;
+
+    }
 
 }
