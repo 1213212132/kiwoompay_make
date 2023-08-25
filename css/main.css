@@ -85,7 +85,7 @@ body {
     z-index: 999;
 
     text-align: center;
-    width: 100%;
+    width: 130%;
     line-height: 40px;
 
     color: #222;
@@ -99,8 +99,9 @@ body {
 
 .header .gnb>ul>li .sub a {
     display: block;
-    color: #444;
-    font-size: 11px;
+    color: #fff;
+
+    font-size: 14px;
     line-height: 30px;
 }
 
@@ -113,7 +114,7 @@ body {
     width: 100%;
     height: 0;
     border-top: 1px solid #ddd;
-    background: #fff;
+    background: rgba(9, 21, 40, 0.9);
     z-index: 999;
 
     transition: 0.5s;
@@ -1025,7 +1026,9 @@ a.btn.wc:hover:before {
     .main_content {
 
         font-family: 'GmarketSansMedium';
-        padding-bottom: 120px;
+        /*r*/
+        padding-top: 100px;
+        height: 1200px;
     }
 
     .main_content .tit h2 {
@@ -1053,9 +1056,10 @@ a.btn.wc:hover:before {
         font-weight: 300;
         text-align: center;
         color: #6e6e6e;
-        padding-bottom: 3%;
+        padding-bottom: 10%;
 
         /*r*/
+        line-height: 1.5;
         font-size: 14px;
     }
 
@@ -1063,7 +1067,10 @@ a.btn.wc:hover:before {
         height: 272px;
         padding-top: 30px;
         background: #f3f4f9;
+
     }
+
+    .main_content .box .inner {}
 
     .main_content .box ul {
         padding-top: 5px;
@@ -1071,11 +1078,16 @@ a.btn.wc:hover:before {
         max-width: 1240px;
         margin: 0 auto;
         text-align: center;
+        /*r*/
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .main_content .box ul li {
         float: left;
         width: 33.333%;
+        /*r*/
+        width: 100%;
     }
 
 
@@ -1086,6 +1098,7 @@ a.btn.wc:hover:before {
         font-weight: 500;
 
         /*r*/
+        padding-bottom: 5px;
         font-size: 20px;
 
     }
@@ -1148,6 +1161,7 @@ a.btn.wc:hover:before {
         line-height: 1.5;
 
         /*r*/
+        padding-bottom: 35px;
         font-size: 12px;
     }
 
@@ -1461,7 +1475,8 @@ a.btn.wc:hover:before {
     .tap_menu {
 
         font-family: 'GmarketSansMedium';
-
+        /*r*/
+        height: 850px;
     }
 
     .tap_menu .box {}
@@ -1476,6 +1491,7 @@ a.btn.wc:hover:before {
         color: #3b3b3d;
 
         /*r*/
+
         font-size: 20px;
 
     }
@@ -1514,16 +1530,21 @@ a.btn.wc:hover:before {
 
         opacity: 0;
         transition: opacity 0.5s linear;
-
+        height: 400px;
 
     }
 
+    .tap_menu .change_content li.on figure {
+
+        height: 400px;
+    }
 
     .tap_menu .change_content li.on figure img {
         opacity: 1;
         /*r*/
         position: relative;
-        height: 450px;
+        height: 400px;
+
 
 
     }
@@ -1543,7 +1564,7 @@ a.btn.wc:hover:before {
         top: -15%;
         left: 0;
         width: 50%;
-        height: 100%;
+        height: 90%;
 
 
 
@@ -1564,6 +1585,8 @@ a.btn.wc:hover:before {
         width: 50%;
         height: 100%;
 
+        /*r*/
+        height: 540px;
     }
 
     .tap_menu .box .content_change span {
@@ -1601,6 +1624,8 @@ a.btn.wc:hover:before {
         -webkit-transition: background 1000ms;
         transition: background 1000ms;
 
+        /*r*/
+        transition: none;
 
 
     }
@@ -1618,6 +1643,7 @@ a.btn.wc:hover:before {
         text-align: center;
         cursor: pointer;
         z-index: 2;
+
 
 
 
@@ -1675,6 +1701,7 @@ a.btn.wc:hover:before {
         left: 22%;
 
         /*r*/
+
         font-size: 18px;
         left: 8%;
     }
@@ -1710,7 +1737,7 @@ a.btn.wc:hover:before {
         background: #093968;
 
         /*r*/
-        top: 338px;
+        top: 298px;
         left: 8%;
         right: 8%;
     }
@@ -1734,6 +1761,9 @@ a.btn.wc:hover:before {
         /*r*/
         font-size: 18px;
         left: 8%;
+        top: 298px;
+        left: 8%;
+        right: 8%;
 
     }
 
